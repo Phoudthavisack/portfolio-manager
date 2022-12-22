@@ -1,6 +1,8 @@
 import React from "react";
 // material
 import { Container } from "@mui/material";
+// constants
+import { COLOR_THEME } from "../constants";
 // ---------------------- //
 function ContainerStyle({ children }) {
   return (
@@ -8,7 +10,7 @@ function ContainerStyle({ children }) {
       sx={{
         width: { md: 900, sm: "100%", xs: "100%" },
         p: 0,
-        border: "1px dashed #000",
+        // border: `1px dashed ${COLOR_THEME?.[0]}`,
       }}
     >
       {children}

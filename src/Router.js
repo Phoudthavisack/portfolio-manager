@@ -12,12 +12,12 @@ const Route = () =>
       element: <MainLayout />,
       children: [
         {
-          path: "home",
+          path: "",
           element: <HomePage />,
         },
         {
-          path: "",
-          element: <Navigate to="home" />,
+          path: "about",
+          element: <p>Download</p>,
         },
       ],
     },

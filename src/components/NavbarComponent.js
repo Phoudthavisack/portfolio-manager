@@ -13,21 +13,26 @@ import { styled, alpha } from "@mui/material/styles";
 import { Link } from "react-router-dom";
 // icons
 import { AiOutlineMenu } from "react-icons/ai";
+import { COLOR_THEME } from "../constants";
 // ----------------------------- //
 const RootStyle = styled(Box)(({ theme }) => ({
-  backgroundColor: alpha(theme.palette.primary.main, 0.2),
   padding: 10,
   display: "flex",
   alignItems: "center",
+  color:COLOR_THEME?.[1]
 }));
 const navSession = [
   {
-    path: "home",
+    path: "",
     title: "Home",
   },
   {
     path: "about",
     title: "About us",
+  },
+  {
+    path: "contact",
+    title: "Contact us",
   },
   {
     path: "services",
